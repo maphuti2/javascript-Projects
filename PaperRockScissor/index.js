@@ -9,11 +9,26 @@ function getComputerChoice(){
     const compChoice = Math.floor(Math.random() * (4-1)+1);
 
     if (compChoice === 1){
-        return "paper";
+        return paper;
     }
     else if (compChoice === 2){
-        return "rock";
+        return rock;
     }else{
-        return "scissor";
+        return scissor;
     }
 }
+
+//creating function that takes user input
+
+function getHumanChoice(){
+    const user = prompt("please enter paper, rock or scissor:", "");
+    if (user === paper || user === rock || user === scissor){
+        return user;
+    }
+    else{
+        return "This is Rock Paper Scissor game. Please play by the rules!"
+    }
+}
+
+console.log(getComputerChoice());
+console.log(getHumanChoice());
