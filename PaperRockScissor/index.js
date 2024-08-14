@@ -3,6 +3,9 @@ const paper = "paper";
 const rock = "rock";
 const scissor = "scissor";
 
+let humanScore = 0;
+let computerScore = 0;
+
 //creating function that will randomly pick rock, paper or scissor
 
 function getComputerChoice(){
@@ -30,5 +33,3 @@ function getHumanChoice(){
     }
 }
 
-console.log(getComputerChoice());
-console.log(getHumanChoice());
