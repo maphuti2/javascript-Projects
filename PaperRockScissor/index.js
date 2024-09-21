@@ -6,6 +6,12 @@ const scissor = "scissor";
 let humanScore;
 let computerScore;
 
+//for dom use
+const player = document.querySelector(".player");
+const computerPlay = document.querySelector(".computer");
+const round = document.querySelector("round");
+const btn = document.querySelector("img");
+
 
 //creating function that will randomly pick rock, paper or scissor
 
