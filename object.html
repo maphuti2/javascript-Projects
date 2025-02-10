@@ -23,8 +23,23 @@
             console.log(player.name);
         }
 
-        printName(player2)
+       // printName(player2)
 
+       // Object Constructors
+
+       function Player (name, marker) {
+        this.name = name;
+        this.marker = marker;
+        this.nameNmaker = ()=>{
+            console.log(this.name + ' ' + this.marker)
+        }
+       }
+
+       playerOne = new Player('Rain', 'O');
+       playerTwo = new Player('Storm', 'X');
+
+       playerOne.nameNmaker();
+       console.log(playerTwo.marker);
     </script>
 </body>
 </html>
