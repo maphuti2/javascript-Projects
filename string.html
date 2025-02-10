@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+</head>
+<body>
+    
+    <script>
+
+        const lastWordNumber = function(s){
+            let lastWord = s.trim();
+            let wordPos = lastWord.lastIndexOf(' ');
+            let word = lastWord.slice(wordPos +1);
+            let wordNumber = word.length;
+
+            return `The word is ${word} with ${wordNumber} characters`;
+        }
+
+        console.log(lastWordNumber('  hello world  '));
+    </script>
+</body>
+</html>
