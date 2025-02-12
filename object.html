@@ -38,8 +38,30 @@
        playerOne = new Player('Rain', 'O');
        playerTwo = new Player('Storm', 'X');
 
-       playerOne.nameNmaker();
-       console.log(playerTwo.marker);
+      // playerOne.nameNmaker();
+      // console.log(playerTwo.marker);
+
+
+      // book constructor
+
+      function Book(title, author, pages, read){
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.read = read;
+        this.bookInfo = function (){
+            if (this.read.toLowerCase() === 'yes'){
+                return `${this.title} by ${this.author}, ${this.pages} pages, have read it`;
+            }
+            else{
+                return `${this.title} by ${this.author}, ${this.pages} pages, not read yet`;
+            }
+        }
+      } 
+
+      const book1 = new Book('The Lion', 'Thapi Niggar', 251, 'Yes');
+
+      console.log(book1.bookInfo());
     </script>
 </body>
 </html>
